@@ -1,25 +1,45 @@
-Dante Lamorte — Portfolio
-Personal portfolio site built as a single HTML file. No framework, no build step.
+# Dante Lamorte — Portfolio
 
-Live: dantelamorte.github.io/portfolio
+Personal portfolio website built as a single HTML file. No frameworks, no build tools, and no external dependencies.
 
-Stack
-HTML / CSS / Vanilla JS
-Google Fonts (Space Grotesk, JetBrains Mono)
-No dependencies, no npm
-Features
-EN / ES language toggle with full i18n
-Typewriter role animation
-Expandable project panels with results and code snippets
-Interactive Power BI data model mockup
-Stagger fade-in on scroll
-Active nav highlight via IntersectionObserver
-Copy-to-clipboard email
-Back to top button
-og:image for link previews (LinkedIn, WhatsApp, etc.)
-Structure
+🌐 **Live Demo:**
+https://dantelamorte.github.io/portfolio
+
+---
+
+## Tech Stack
+
+* HTML5
+* CSS3
+* Vanilla JavaScript
+* Google Fonts
+
+  * Space Grotesk
+  * JetBrains Mono
+
+**No frameworks · No npm · No build step**
+
+---
+
+## Features
+
+* 🇬🇧 / 🇪🇸 Full internationalization (English & Spanish)
+* Typewriter-style role animation
+* Expandable project panels with results and code snippets
+* Interactive Power BI data model mockup
+* Staggered fade-in animations on scroll
+* Active navigation highlighting using `IntersectionObserver`
+* One-click email copy to clipboard
+* Back-to-top button
+* Open Graph image support for rich link previews (LinkedIn, WhatsApp, X, etc.)
+
+---
+
+## Project Structure
+
+```text
 portfolio/
-├── index.html          # Main file (copy of portfolio_dante_lamorte.html)
+├── index.html
 ├── portfolio/
 │   └── portfolio_dante_lamorte.html
 └── media/
@@ -28,5 +48,30 @@ portfolio/
     ├── itbaLogo.png
     ├── uadeLogo.png
     └── linkedinLogo.png
-Deploy
-Hosted on GitHub Pages. Settings > Pages > Branch: main, folder: / (root).
+```
+
+### Files
+
+* `index.html` → Main entry point used by GitHub Pages.
+* `portfolio_dante_lamorte.html` → Original portfolio source file.
+* `media/` → Static assets and branding resources.
+
+---
+
+## Deployment
+
+The site is deployed using **GitHub Pages**.
+
+1. Go to **Settings → Pages**
+2. Select **Branch: `main`**
+3. Select **Folder: `/ (root)`**
+4. Save changes
+
+GitHub Pages will automatically publish the site.
+
+---
+
+## License
+
+This project is intended as a personal portfolio and showcase of work and skills.
+
