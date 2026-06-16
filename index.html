@@ -10,6 +10,9 @@
 <meta property="og:description" content="Data Scientist specializing in Python, machine learning, NLP, and Power BI. Portfolio of end-to-end ML pipelines and BI dashboards.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dantelamorte.github.io">
+<meta property="og:image" content="https://dantelamorte.github.io/media/portada.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -526,7 +529,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    align-items: center;
+    align-items: start;
   }
 
   .about-text {
@@ -1047,8 +1050,8 @@
         <span class="hero-stat-label" data-i18n="hero_stat2_label">Headlines classified</span>
       </div>
       <div class="hero-stat">
-        <span class="hero-stat-value" data-count="3" data-suffix="">3</span>
-        <span class="hero-stat-label" data-i18n="hero_stat3_label">Completed courses</span>
+        <span class="hero-stat-value" data-count="15" data-suffix="+">15+</span>
+        <span class="hero-stat-label" data-i18n="hero_stat3_label">DAX measures built</span>
       </div>
       <div class="hero-stat">
         <span class="hero-stat-value">R²0.98</span>
@@ -1341,7 +1344,7 @@ model_lstm = <span class="fn">Sequential</span>([
           <p class="project-index" data-i18n="proj3_index">03 / Business Intelligence</p>
           <h3 class="project-title">F1 Statistical Dashboard</h3>
           <p class="project-subtitle" data-i18n="proj3_subtitle">Full F1 history analyzed in Power BI</p>
-          <p style="font-family:var(--mono);font-size:11px;color:var(--accent);opacity:0.6;margin-top:6px;letter-spacing:0.04em;">Business Intelligence · UADE · 2025</p>
+          <p style="font-family:var(--mono);font-size:11px;color:var(--accent);opacity:0.6;margin-top:6px;letter-spacing:0.04em;">Data Analytics · Coderhouse · 2024</p>
         </div>
         <div class="project-metrics">
           <div class="metric">
@@ -1398,7 +1401,7 @@ model_lstm = <span class="fn">Sequential</span>([
 
               <!-- Bookmark nav tabs -->
               <div style="display:flex;background:#100f1e;border-bottom:1px solid #2a2840;overflow-x:auto;">
-                <button onclick="pbiSwitch('portada')" id="pbi-tab-portada" style="background:rgba(167,139,250,0.12);border:none;border-bottom:2px solid #A78BFA;padding:9px 16px;font-size:11px;font-family:var(--mono);color:#A78BFA;cursor:pointer;white-space:nowrap;transition:all 0.15s;">Portada</button>
+                <button onclick="pbiSwitch('portada')" id="pbi-tab-portada" data-i18n="pbi_tab_portada" style="background:rgba(167,139,250,0.12);border:none;border-bottom:2px solid #A78BFA;padding:9px 16px;font-size:11px;font-family:var(--mono);color:#A78BFA;cursor:pointer;white-space:nowrap;transition:all 0.15s;">Home</button>
                 <button onclick="pbiSwitch('general')" id="pbi-tab-general" data-i18n="pbi_tab_general" style="background:none;border:none;border-bottom:2px solid transparent;padding:9px 16px;font-size:11px;font-family:var(--mono);color:#555;cursor:pointer;white-space:nowrap;transition:all 0.15s;">General Analysis</button>
                 <button onclick="pbiSwitch('pilotos')" id="pbi-tab-pilotos" data-i18n="pbi_tab_pilotos" style="background:none;border:none;border-bottom:2px solid transparent;padding:9px 16px;font-size:11px;font-family:var(--mono);color:#555;cursor:pointer;white-space:nowrap;transition:all 0.15s;">Drivers</button>
                 <button onclick="pbiSwitch('constructores')" id="pbi-tab-constructores" data-i18n="pbi_tab_constructores" style="background:none;border:none;border-bottom:2px solid transparent;padding:9px 16px;font-size:11px;font-family:var(--mono);color:#555;cursor:pointer;white-space:nowrap;transition:all 0.15s;">Constructors</button>
@@ -1631,11 +1634,11 @@ model_lstm = <span class="fn">Sequential</span>([
           <div>
             <p class="expand-section-title" data-i18n="proj3_r2_title">Data model · tables &amp; relationships (star schema)</p>
             <div class="sentiment-row">
-              <div class="sent-block" style="min-width:130px;flex:1;"><span class="sent-val" style="color:var(--accent);font-size:15px;">drivers</span><span class="sent-label">Piloto · driverRef · nationality</span></div>
-              <div class="sent-block" style="min-width:130px;flex:1;"><span class="sent-val" style="color:var(--accent);font-size:15px;">races</span><span class="sent-label">Fecha · country · circuit</span></div>
-              <div class="sent-block" style="min-width:130px;flex:1;"><span class="sent-val" style="color:var(--accent);font-size:15px;">constructors</span><span class="sent-label">Constructor · nationality</span></div>
-              <div class="sent-block" style="min-width:130px;flex:1;"><span class="sent-val" style="color:var(--accent);font-size:15px;">circuits</span><span class="sent-label">Circuito · country</span></div>
-              <div class="sent-block" style="min-width:130px;flex:1;"><span class="sent-val" style="color:var(--accent);font-size:15px;">Calendario</span><span class="sent-label">Date table · jerarquía</span></div>
+              <div class="sent-block" style="min-width:130px;flex:1;"><span class="sent-val" style="color:var(--accent);font-size:15px;">drivers</span><span class="sent-label" data-i18n="pbi_col_drivers">Driver · driverRef · nationality</span></div>
+              <div class="sent-block" style="min-width:130px;flex:1;"><span class="sent-val" style="color:var(--accent);font-size:15px;">races</span><span class="sent-label" data-i18n="pbi_col_races">Date · country · circuit</span></div>
+              <div class="sent-block" style="min-width:130px;flex:1;"><span class="sent-val" style="color:var(--accent);font-size:15px;">constructors</span><span class="sent-label" data-i18n="pbi_col_constructors">Constructor · nationality</span></div>
+              <div class="sent-block" style="min-width:130px;flex:1;"><span class="sent-val" style="color:var(--accent);font-size:15px;">circuits</span><span class="sent-label" data-i18n="pbi_col_circuits">Circuit · country</span></div>
+              <div class="sent-block" style="min-width:130px;flex:1;"><span class="sent-val" style="color:var(--accent);font-size:15px;" data-i18n="pbi_table_calendario">Calendario</span><span class="sent-label" data-i18n="pbi_col_calendario">Date table · hierarchy</span></div>
             </div>
           </div>
 
@@ -1844,15 +1847,12 @@ modelo.<span class="fn">fit</span>(X_train, y_train)
   <p class="section-label" data-i18n="section_about_label">Background</p>
   <h2 class="section-title" data-i18n="section_about_title">About</h2>
 
-  <div class="about-grid">
-    <div>
-      <p class="about-text" data-i18n-html="about_text">
-        Based in Buenos Aires. I build data systems end to end: API extraction, feature engineering, ensemble models, Power BI dashboards. Always focused on what the data actually answers, not just the metric.<br><br>
-        Studying <strong>International Relations</strong> at UADE means I actually read the context around a dataset, not just the numbers. That's what shaped the World News NLP project: understanding why certain headlines dominate matters as much as what the classifier gets right.<br><br>
-        Currently learning <strong>full-stack web development</strong> at ITBA. Freelance analytical work for marketing clients on the side.
-      </p>
-    </div>
+  <p class="about-text" data-i18n-html="about_text" style="max-width:680px;margin-bottom:40px;">
+    Guided by a drive to use data to measure, understand, and explain the complex problems that shape today's world.<br><br>
+    Freelance data analyst, applying ML models and statistical analysis to real decisions.
+  </p>
 
+  <div class="about-grid">
     <div>
       <p data-i18n="about_edu_title" style="font-family: var(--sans); font-size: 13px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px;">Education</p>
       <div class="cert-list">
@@ -1884,8 +1884,10 @@ modelo.<span class="fn">fit</span>(X_train, y_train)
           </div>
         </div>
       </div>
+    </div>
 
-      <p data-i18n="about_cert_title" style="font-family: var(--sans); font-size: 13px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 28px; margin-bottom: 16px;">Certifications</p>
+    <div>
+      <p data-i18n="about_cert_title" style="font-family: var(--sans); font-size: 13px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px;">Certifications</p>
       <div class="cert-list">
         <div class="cert-item">
           <div class="cert-icon" style="background:#fff;overflow:hidden;">
@@ -2234,13 +2236,10 @@ modelo.<span class="fn">fit</span>(X_train, y_train)
       nav_contact: 'Contact',
       // Hero
       hero_eyebrow: 'Data Scientist · Buenos Aires',
-      hero_bio: `Building models that actually explain something.<br>
-        From <strong>API pipelines</strong> and <strong>NLP classifiers</strong> to
-        <strong>Power BI dashboards</strong>. Background in International Relations
-        and currently adding <strong>full-stack development</strong> at ITBA to the mix.`,
+      hero_bio: `Data scientist with hands-on experience in ML, NLP, and business analytics. Full Data Science program at <strong>Coderhouse</strong>, IBM-certified in Machine Learning with Python. Studying <strong>International Relations</strong> at UADE and full-stack (MERN) at ITBA.`,
       hero_stat1_label: 'Views predicted',
       hero_stat2_label: 'Headlines classified',
-      hero_stat3_label: 'Completed courses',
+      hero_stat3_label: 'DAX measures built',
       hero_stat4_label: 'Best model R²',
       hero_btn_projects: 'View projects',
       hero_btn_cv: 'Download CV',
@@ -2251,14 +2250,14 @@ modelo.<span class="fn">fit</span>(X_train, y_train)
       // Project 01
       proj1_index: '01 / Machine Learning',
       proj1_subtitle: 'YouTube API · 1.41 billion views · predicting video performance',
-      proj1_desc: `Pulled the full video catalog of a major educational channel straight from the <strong>YouTube Data API v3</strong> with pagination handling. Built features like short detection, weekend flag, title length, and publish hour; cleaned outliers via IQR. Used <strong>PLSR for feature selection</strong>, then tested 7 regression models with 5-fold cross-validation: Linear, Ridge, Lasso, ElasticNet, Decision Tree, Random Forest, and Gradient Boosting, with GridSearchCV for tuning. Best result came from an <strong>ensemble (VotingRegressor)</strong> combining the top two models.`,
+      proj1_desc: `The full video catalog of a major educational channel was extracted directly from the <strong>YouTube Data API v3</strong> with pagination handling. Features were engineered including short detection, weekend flag, title length, and publish hour; outliers were cleaned via IQR. <strong>PLSR was applied for feature selection</strong>, then 7 regression models were tested with 5-fold cross-validation: Linear, Ridge, Lasso, ElasticNet, Decision Tree, Random Forest, and Gradient Boosting, with GridSearchCV for tuning. Best results were obtained from an <strong>ensemble (VotingRegressor)</strong> combining the top two models.`,
       proj1_r1_title: 'Dataset · Extra History (YouTube channel)',
       proj1_r2_title: 'Feature Selection · PLSR (variable weights)',
       proj1_r3_title: '7-model comparison (5-fold cross-validation)',
       // Project 02
       proj2_index: '02 / NLP + Deep Learning',
       proj2_subtitle: 'r/worldnews · 2008 to 2016 · sentiment classification',
-      proj2_desc: `Full NLP pipeline on 8 years of Reddit world news headlines. Text cleaning covered <strong>lowercasing, punctuation removal, tokenization, stopword filtering, and lemmatization</strong> with custom exclusions. Used <strong>TextBlob</strong> for sentiment scoring and word cloud breakdowns by category. Then trained three classifiers: <strong>Bag of Words, TF-IDF with Logistic Regression, and a Bidirectional LSTM</strong> (Keras/TensorFlow), going from classical ML to deep learning to test whether word order actually moves the needle on sentiment classification.`,
+      proj2_desc: `A full NLP pipeline was built on 8 years of Reddit world news headlines. Text was cleaned through <strong>lowercasing, punctuation removal, tokenization, stopword filtering, and lemmatization</strong> with custom exclusions. <strong>TextBlob</strong> was used for sentiment scoring and word cloud breakdowns by category. Three classifiers were then trained: <strong>Bag of Words, TF-IDF with Logistic Regression, and a Bidirectional LSTM</strong> (Keras/TensorFlow), going from classical ML to deep learning to test whether word order moves the needle on sentiment classification.`,
       proj2_r1_title: 'Sentiment distribution · 509,236 headlines (2008-2016)',
       proj2_r2_title: 'Most frequent words · all headlines',
       proj2_r3_title: 'Top words by sentiment (BoW coefficient)',
@@ -2266,14 +2265,14 @@ modelo.<span class="fn">fit</span>(X_train, y_train)
       // Project 03
       proj3_index: '03 / Business Intelligence',
       proj3_subtitle: 'Full F1 history analyzed in Power BI',
-      proj3_desc: `Built a <strong>multi-page Power BI dashboard</strong> analyzing the full history of Formula 1 using a star-schema data model (drivers, races, constructors, circuits, Calendario). Designed <strong>15+ custom DAX measures</strong> (total wins, podiums by position, points per season, winner counts) across 5 report pages: Portada, Análisis General, Pilotos, Constructores, and Análisis por País. Implemented <strong>4 custom tooltip pages</strong>, a bookmark-based navigation menu, cross-filtering slicers by nationality and date range, and combo/funnel/treemap charts for multi-angle comparison. Tracked head-to-head performance across legends: Schumacher, Senna, Hamilton, Verstappen, Prost, Alonso, Lauda and top constructors: Ferrari, Mercedes, Red Bull, McLaren.`,
+      proj3_desc: `A <strong>multi-page Power BI dashboard</strong> was built to analyze the full history of Formula 1 using a star-schema data model (drivers, races, constructors, circuits, Calendar). <strong>15+ custom DAX measures</strong> were designed (total wins, podiums by position, points per season, winner counts) across 5 report pages: Home, General Analysis, Drivers, Constructors, and By Country. <strong>4 custom tooltip pages</strong> were implemented alongside a bookmark-based navigation menu, cross-filtering slicers by nationality and date range, and combo/funnel/treemap charts for multi-angle comparison.`,
       proj3_r1_title: 'Interactive dashboard · preview',
       proj3_r2_title: 'Data model · tables &amp; relationships (star schema)',
       proj3_r3_title: 'Custom DAX measures (MEDIDAS table)',
       // Project 04
       proj4_index: '04 / Exploratory Analysis + Regression',
       proj4_subtitle: 'EDA and predictive modeling on academic results',
-      proj4_desc: `Dataset of 2,999 students with 19 variables: parental involvement, sleep hours, tutoring sessions, school type, and more. Handled <strong>missing values with mode imputation</strong>, encoded categoricals, and ran <strong>correlation-based feature selection</strong> to cut the noise before modeling. Trained a <strong>Random Forest Regressor</strong> and evaluated with R², MSE, and MAE. Attendance came out as the single strongest predictor by a wide margin. Gender and income level? Near-zero correlation with outcomes in this dataset.`,
+      proj4_desc: `Dataset of 2,999 students with 19 variables: parental involvement, sleep hours, tutoring sessions, school type, and more. <strong>Missing values were handled with mode imputation</strong>, categoricals were encoded, and <strong>correlation-based feature selection</strong> was applied to cut the noise before modeling. A <strong>Random Forest Regressor</strong> was trained and evaluated with R², MSE, and MAE. Attendance came out as the single strongest predictor by a wide margin. Gender and income level showed near-zero correlation with outcomes in this dataset.`,
       proj4_r1_title: 'Correlation with exam result (all variables)',
       proj4_r2_title: 'Model metrics · Random Forest Regressor',
       proj4_r3_title: 'Variables dropped in feature selection (correlation &lt; |0.03|)',
@@ -2295,9 +2294,8 @@ modelo.<span class="fn">fit</span>(X_train, y_train)
       section_about_title: 'About',
       about_edu_title: 'Education',
       about_cert_title: 'Certifications',
-      about_text: `Based in Buenos Aires. I build data systems end to end: API extraction, feature engineering, ensemble models, Power BI dashboards. Always focused on what the data actually answers, not just the metric.<br><br>
-        Studying <strong>International Relations</strong> at UADE means I actually read the context around a dataset, not just the numbers. That's what shaped the World News NLP project: understanding why certain headlines dominate matters as much as what the classifier gets right.<br><br>
-        Currently learning <strong>full-stack web development</strong> at ITBA. Freelance analytical work for marketing clients on the side.`,
+      about_text: `Guided by a drive to use data to measure, understand, and explain the complex problems that shape today's world.<br><br>
+        Freelance data analyst, applying ML models and statistical analysis to real decisions.`,
       // Contact
       section_contact_label: 'Get in touch',
       contact_title: "Let's work together",
@@ -2308,7 +2306,12 @@ modelo.<span class="fn">fit</span>(X_train, y_train)
       footer_lang1: 'Spanish (Native)', footer_lang2: 'English (Fluent, FCE Grade A)',
       copy_copied: '✓ Copied!',
       // PBI mockup
-      pbi_tab_general: 'General Analysis', pbi_tab_pilotos: 'Drivers', pbi_tab_constructores: 'Constructors', pbi_tab_paises: 'By Country',
+      pbi_tab_portada: 'Home', pbi_tab_general: 'General Analysis', pbi_tab_pilotos: 'Drivers', pbi_tab_constructores: 'Constructors', pbi_tab_paises: 'By Country',
+      pbi_col_drivers: 'Driver · driverRef · nationality',
+      pbi_col_races: 'Date · country · circuit',
+      pbi_col_constructors: 'Constructor · nationality',
+      pbi_col_circuits: 'Circuit · country',
+      pbi_table_calendario: 'Calendar', pbi_col_calendario: 'Date table · hierarchy',
       pbi_seasons: 'Seasons', pbi_races: 'Races', pbi_drivers: 'Drivers', pbi_countries: 'Countries', pbi_circuits: 'Circuits',
       pbi_year_label: 'Year:', pbi_nat_label: 'Nat.:', pbi_all: 'All',
       pbi_races_per_season: 'Races per season · line chart',
@@ -2340,13 +2343,10 @@ modelo.<span class="fn">fit</span>(X_train, y_train)
       nav_contact: 'Contacto',
       // Hero
       hero_eyebrow: 'Data Scientist · Buenos Aires',
-      hero_bio: `Construyo modelos que realmente explican algo.<br>
-        Desde <strong>pipelines de APIs</strong> y <strong>clasificadores NLP</strong> hasta
-        <strong>dashboards en Power BI</strong>. Estudié Relaciones Internacionales
-        y actualmente sumo <strong>desarrollo full-stack</strong> en el ITBA.`,
+      hero_bio: `Data scientist con experiencia en ML, NLP y análisis de negocio. Carrera completa de Data Science en <strong>Coderhouse</strong>, certificado en Machine Learning con Python por <strong>IBM</strong>. Relaciones Internacionales en la UADE y full-stack (MERN) en el ITBA, en curso.`,
       hero_stat1_label: 'Vistas predichas',
       hero_stat2_label: 'Titulares clasificados',
-      hero_stat3_label: 'Cursos completados',
+      hero_stat3_label: 'Medidas DAX creadas',
       hero_stat4_label: 'Mejor R² de modelo',
       hero_btn_projects: 'Ver proyectos',
       hero_btn_cv: 'Descargar CV',
@@ -2364,7 +2364,7 @@ modelo.<span class="fn">fit</span>(X_train, y_train)
       // Project 02
       proj2_index: '02 / NLP + Deep Learning',
       proj2_subtitle: 'r/worldnews · 2008 a 2016 · clasificación de sentimiento',
-      proj2_desc: `Pipeline NLP completo sobre 8 años de titulares de Reddit World News. El preprocesamiento incluyó <strong>minúsculas, eliminación de puntuación, tokenización, filtrado de stopwords y lematización</strong> con exclusiones personalizadas. Se usó <strong>TextBlob</strong> para scoring de sentimiento y nubes de palabras por categoría. Luego se entrenaron tres clasificadores: <strong>Bag of Words, TF-IDF con Regresión Logística y un LSTM Bidireccional</strong> (Keras/TensorFlow), para comparar ML clásico con deep learning en clasificación de sentimiento.`,
+      proj2_desc: `Se construyó un pipeline NLP completo sobre 8 años de titulares de Reddit World News. El preprocesamiento incluyó <strong>minúsculas, eliminación de puntuación, tokenización, filtrado de stopwords y lematización</strong> con exclusiones personalizadas. Se usó <strong>TextBlob</strong> para scoring de sentimiento y nubes de palabras por categoría. Se entrenaron tres clasificadores: <strong>Bag of Words, TF-IDF con Regresión Logística y un LSTM Bidireccional</strong> (Keras/TensorFlow), para comparar ML clásico con deep learning en clasificación de sentimiento.`,
       proj2_r1_title: 'Distribución de sentimiento · 509.236 titulares (2008-2016)',
       proj2_r2_title: 'Palabras más frecuentes · todos los titulares',
       proj2_r3_title: 'Palabras más relevantes por sentimiento (coeficiente BoW)',
@@ -2372,7 +2372,7 @@ modelo.<span class="fn">fit</span>(X_train, y_train)
       // Project 03
       proj3_index: '03 / Business Intelligence',
       proj3_subtitle: 'Historia completa de la F1 analizada en Power BI',
-      proj3_desc: `Desarrollé un <strong>dashboard multi-página en Power BI</strong> que analiza toda la historia de la Fórmula 1 con un modelo de datos en estrella (drivers, races, constructors, circuits, Calendario). Diseñé <strong>más de 15 medidas DAX personalizadas</strong> (victorias totales, podios por posición, puntos por temporada, cantidad de ganadores) en 5 páginas: Portada, Análisis General, Pilotos, Constructores y Análisis por País. Implementé <strong>4 páginas de tooltips personalizados</strong>, menú de navegación con bookmarks, slicers cruzados por nacionalidad y rango de fechas, y gráficos combo, embudo y treemap.`,
+      proj3_desc: `Se desarrolló un <strong>dashboard multi-página en Power BI</strong> para analizar toda la historia de la Fórmula 1 con un modelo de datos en estrella (drivers, races, constructors, circuits, Calendario). Se diseñaron <strong>más de 15 medidas DAX personalizadas</strong> (victorias totales, podios por posición, puntos por temporada, cantidad de ganadores) en 5 páginas: Portada, Análisis General, Pilotos, Constructores y Análisis por País. Se implementaron <strong>4 páginas de tooltips personalizados</strong>, menú de navegación con bookmarks, slicers cruzados por nacionalidad y rango de fechas, y gráficos combo, embudo y treemap.`,
       proj3_r1_title: 'Dashboard interactivo · preview',
       proj3_r2_title: 'Modelo de datos · tablas y relaciones (esquema estrella)',
       proj3_r3_title: 'Medidas DAX personalizadas (tabla MEDIDAS)',
@@ -2401,9 +2401,8 @@ modelo.<span class="fn">fit</span>(X_train, y_train)
       section_about_title: 'Sobre mí',
       about_edu_title: 'Educación',
       about_cert_title: 'Certificaciones',
-      about_text: `Basado en Buenos Aires. Construyo sistemas de datos de punta a punta: extracción por API, feature engineering, modelos de ensamble, dashboards en Power BI. Siempre enfocado en lo que los datos realmente responden, no solo en la métrica.<br><br>
-        Estudiar <strong>Relaciones Internacionales</strong> en la UADE me permite leer el contexto detrás de un dataset, no solo los números. Eso marcó el proyecto de NLP sobre noticias: entender por qué ciertos titulares dominan es tan importante como lo que clasifica bien el modelo.<br><br>
-        Actualmente aprendiendo <strong>desarrollo web full-stack</strong> en el ITBA. Trabajo freelance de análisis para clientes de marketing.`,
+      about_text: `Guiado por mi afán de utilizar datos para medir, comprender y explicar las complejas problemáticas que se presentan en el mundo actual.<br><br>
+        Analista de datos freelance, aplicando modelos de ML y análisis estadístico a decisiones reales.`,
       // Contact
       section_contact_label: 'Contacto',
       contact_title: 'Trabajemos juntos',
@@ -2414,7 +2413,12 @@ modelo.<span class="fn">fit</span>(X_train, y_train)
       footer_lang1: 'Español (Nativo)', footer_lang2: 'Inglés (Fluido, FCE Grade A)',
       copy_copied: '✓ ¡Copiado!',
       // PBI mockup
-      pbi_tab_general: 'Análisis General', pbi_tab_pilotos: 'Pilotos', pbi_tab_constructores: 'Constructores', pbi_tab_paises: 'Por País',
+      pbi_tab_portada: 'Portada', pbi_tab_general: 'Análisis General', pbi_tab_pilotos: 'Pilotos', pbi_tab_constructores: 'Constructores', pbi_tab_paises: 'Por País',
+      pbi_col_drivers: 'Piloto · driverRef · nacionalidad',
+      pbi_col_races: 'Fecha · país · circuito',
+      pbi_col_constructors: 'Constructor · nacionalidad',
+      pbi_col_circuits: 'Circuito · país',
+      pbi_table_calendario: 'Calendario', pbi_col_calendario: 'Tabla de fechas · jerarquía',
       pbi_seasons: 'Temporadas', pbi_races: 'Carreras', pbi_drivers: 'Pilotos', pbi_countries: 'Países', pbi_circuits: 'Circuitos',
       pbi_year_label: 'Año:', pbi_nat_label: 'Nac.:', pbi_all: 'Todos',
       pbi_races_per_season: 'Carreras por temporada · line chart',
